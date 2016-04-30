@@ -1,0 +1,17 @@
+{
+  "name": "jquerytran",
+  "homepage": "https://github.com/hitsangeet/jquerytran",
+  "description": "Jquery Training",
+  "main": "",
+  "authors": [
+    "Sheikh Ali"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
