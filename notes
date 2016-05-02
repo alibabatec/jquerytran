@@ -1,3 +1,9 @@
+CSS classes
+
+.addClass() .removeClass() .css()
+
+
+
 jQuery Get/set
 
 .html() -> raw html
@@ -5,6 +11,11 @@ jQuery Get/set
 .val() -> input text box value
 
 .append() .appendTo() .prepend() .after() .before() .remove() .empty()
+
+
+The jQuery remove() method also accepts one parameter, which allows you to filter the 
+
+elements to be removed. empty() doens not take parameter.
 
 With .append(), the selector expression preceding the method is the container into which 
 

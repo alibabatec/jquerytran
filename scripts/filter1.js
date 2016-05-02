@@ -22,6 +22,32 @@ jQuery.noConflict();
 	$('#cmdAfter').on('click',dAfter);
 	$('#cmdAppendTo').on('click',dAppendTo);
 	$('#cmdPrependTo').on('click',dPrependTo);
+	$('#cmdRemove').on('click',dRemove);
+	$('#cmdEmpty').on('click',dEmpty);
+	
+	$('#cmdPink').on('click',dPink);
+	$('#cmdBlue').on('click',dBlue);
+	
+	function dBlue(){
+		$('p:eq(1)').removeClass('pinktheme');
+		$('p:eq(1)').addClass('bluetheme');
+		
+		
+	};
+	function dPink(){
+		$('p:eq(1)').removeClass('bluetheme');
+		$('p:eq(1)').addClass('pinktheme');
+	};
+	
+	function dRemove(){
+		$('p').remove(".text2");
+	};
+	
+	function dEmpty(){
+		$('p').empty(".text2");		
+	};
+	
+	
 	
 	function dAppend(){
 		$('p').append("Append");
