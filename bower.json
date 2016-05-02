@@ -13,5 +13,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "prototypejs": "prototype.js#^1.7.1"
+  }
 }

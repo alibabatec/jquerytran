@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>No Conflict</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="txtName" value="Hello" />
+    </form>
+    <script src="../bower_components/prototypejs/dist/prototype.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../scripts/jquerysetnoconflict.js"></script>
+    <script src="../scripts/noconflict.js"></script>
+<!--
+0) No conflict is need to resolve issue of $ sign.
+1) If noconflict mode is not used $ of jQuery hides $ of prototype.js
+2) If you use noconflict $ of prototype will hide $ of jquery
+3) so use noconflict and assign it to some variable and use that as jquery
+
+-->
+
+</body>
+</html>
