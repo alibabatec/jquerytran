@@ -4,6 +4,12 @@ $(selector).toggle(speed,callback);
 $(selector).fadeIn(speed,callback);
 $(selector).fadeOut(speed,callback);
 $(selector).fadeToggle(speed,callback);
+$(selector).slideDown(speed,callback);
+$(selector).slideUp(speed,callback);
+$(selector).slideToggle(speed,callback);
+
+
+
 
 The jQuery fadeTo() method allows fading to a given opacity (value between 0 and 1).
 $(selector).fadeTo(speed,opacity,callback);
@@ -11,3 +17,9 @@ $(selector).fadeTo(speed,opacity,callback);
 $("div > h2:contains('Example'):eq(1)").fadeTo(3000, .2654 , function(){alert('Example Hidden');});
 
 speed = "slow", "fast", or milliseconds.
+
+$('h1:contains("jQuery Effects"):eq(0)').slideToggle(800)
+
+
+$(selector).animate({params},speed,callback);
+$('h2:contains("jQuery Animation"):eq(0)').animate({'font-size': '15'}, 800);
