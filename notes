@@ -23,3 +23,41 @@ $('h1:contains("jQuery Effects"):eq(0)').slideToggle(800)
 
 $(selector).animate({params},speed,callback);
 $('h2:contains("jQuery Animation"):eq(0)').animate({'font-size': '15'}, 800);
+
+ All property names must be camel-cased when used with the animate() method: You will need to write paddingLeft instead of padding-left, marginRight instead of margin-right, and so on.
+
+Also, color animation is not included in the core jQuery library.
+
+It is also possible to define relative values (the value is then relative to the element's current value). This is done by putting += or -= in front of the value:
+
+$("button").click(function(){
+    $("div").animate({
+        left: '250px',
+        height: '+=150px',
+        width: '+=150px'
+    });
+});
+
+
+By default, all HTML elements have a static position, and cannot be moved.
+To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!
+
+
+By default, jQuery comes with queue functionality for animations.
+
+This means that if you write multiple animate() calls after each other, jQuery creates an "internal" queue with these method calls. Then it runs the animate calls ONE by ONE.
+
+
+$("button").click(function(){
+    var div = $("div");
+    div.animate({height: '300px', opacity: '0.4'}, "slow");
+    div.animate({width: '300px', opacity: '0.8'}, "slow");
+    div.animate({height: '100px', opacity: '0.4'}, "slow");
+    div.animate({width: '100px', opacity: '0.8'}, "slow");
+});  
+
+
+$('h1:contains("jQuery"):eq(0)').animate({'font-size': '.18em'}, 8000);
+$('h1:contains("jQuery"):eq(0)').stop();
+
+
