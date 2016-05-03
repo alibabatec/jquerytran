@@ -1,3 +1,25 @@
+/**
+Effects with jQuery (e.g. hiding, revealing, and toggling elements)
+Basic Animations
+Callback functions
+Event handlers
+
+
+Overview of Ajax
+Loading content asynchronously
+Fetching JSON data
+jQuery's Ajax facilities - Common settings - GET and POST requests - Ajax Events - Consuming XML - Sending HTML form data -
+Loading external scripts dynamically
+Interactive Ajax
+
+Simple form validation
+The submit event
+Validation plugin
+Form hints
+
+*/
+
+
 CSS classes
 
 .addClass() .removeClass() .css()
