@@ -27,7 +27,24 @@ jQuery.noConflict();
 	
 	$('#cmdPink').on('click',dPink);
 	$('#cmdBlue').on('click',dBlue);
+    $('#cmdReverse').on('click', reverseText);    
+    $('#cmdCSSPlug').on('click', setCSS);
+    $('#cmdCSSPlugOpt').on('click', setCSSOpt);
+    
+    
+    function setCSSOpt(){
+        $('p').setCSS().setCSSwithOptions({bgColor:'red',textDecoration:'underline'});
+    };
+    
+    function setCSS(){
+        $('p').setCSS().addClass('bluetheme');
+    };
 	
+    function reverseText(){
+        $('p').reverseMe();
+    };
+    
+    
 	function dBlue(){
 		$('p:eq(1)').removeClass('pinktheme');
 		$('p:eq(1)').addClass('bluetheme');
