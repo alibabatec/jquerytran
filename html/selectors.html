@@ -1,0 +1,75 @@
+<html>
+    <body>
+       <div>
+           <ul id='outUl'>
+               <li name='Good Work'>First</li>
+               <li name='Bad Work'>Second</li>
+               <li name='Excellent Work'>Third</li>
+               <li name='Poor Work'>Fourth</li>
+               <li name='Good Job'>Fifth</li>
+               <li name='Excellent Job'>Sixth</li>
+               <li game='chess' name='vivek'>Fake Li</li>
+               <li game='of life' name='vivek'>
+                   <ul id='inUl'>
+                       <li> One</li>
+                       <li> Two</li>
+                       <li> Three</li>
+                   </ul>
+               </li>
+           </ul>
+           <input type='button' id='cmdButton'value='inputbutton'/>
+           <button id='cmdDirect'>Button</button>
+       </div>
+       <form style="border:1px solid red; width:50%">
+           Name : <input type='text' id='txtName' class='inc'/>
+           Age : <input type='text' id='txtAge' class='inc'/>
+           Adult : <input type='checkbox' id='chkAdult' class='inc' />
+           <input type='button' id='cmdShow' value='Show Data' />
+       </form>
+        <script src='../bower_components/jquery/dist/jquery.js'></script>
+        <script>
+         $(function(){
+             console.log("Form in this Page : "+ $('form').length);
+             
+             console.log("Div count in this page "+ $('li').length);
+             
+             $('.inc').css({color:'red'});
+             $('#txtName').css({backgroundColor:'yellow'});
+             
+             console.log($(':button').length);
+             console.log($('input:button').length);
+             console.log($('form input:button').length);
+             
+             console.log("Direct li of outul : "+ $('ul#outUl>li').length);
+             console.log("All li of outul : "+ $('ul#outUl li').length);            
+             
+             console.log("Vivek LI count : "+ $('li[name="vivek"][game="chess"]').length);
+             console.log($('ul,form,li[game="chess"]').length);
+             
+             //$('li:even').css({backgroundColor:'#642933'});
+             //$('li:odd').css({backgroundColor:'yellow'});
+             //$('[name]').css({border:'1px red solid'});
+             //$('[name]:eq(4)').css({border:'1px red solid'});
+                               
+             
+             $(':button').click(function(){
+                 console.log($(':checked').length);
+             });
+             
+             console.log($("[name='Good Work']").html());
+             
+             $("li[name!='Good Work']").each(function(index)
+                                           { console.log($(this).html());console.log($(this).text());});
+             $.each([1,2,3,4], function(index,value){
+                 console.log(value.toString() + " is at : "+ index + " index.");
+             });
+             
+             console.log($('[name^="Good"]').first().text());
+             console.log($('[name$="Work"]').last().text());
+             console.log($('[name*="ent"]').length);
+             
+             
+         });           
+        </script>
+    </body>
+</html>

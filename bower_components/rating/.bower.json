@@ -1,0 +1,15 @@
+{
+  "name": "rating",
+  "homepage": "https://github.com/ngshvanam/rating",
+  "version": "1.0.3",
+  "_release": "1.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.3",
+    "commit": "7127b261ff5904f94c6b7939ae93a9bb31cc86b5"
+  },
+  "_source": "https://github.com/ngshvanam/rating.git",
+  "_target": "^1.0.3",
+  "_originalSource": "https://github.com/ngshvanam/rating.git",
+  "_direct": true
+}
