@@ -3,12 +3,22 @@
  */
 $(function () {
     /*Showing button click*/
-    $('#btnSet').on('click',function () {
+    
+    
+    
+    $('#btnSet').on('click', f1);        
+    $('#btnSet').on('click', f2);
+    $('#btnSet').click(f3);
+    
+    function f1() {
         alert(this.id + " : is clicked");
-    });
-    debugger;
-    /*Setting text value*/
-    $('#btnSet').on('click', function () {
-        $('#txtName').val('hello');
-    })
+    };
+    
+    function f2() {
+        $('#txtName').val('hello Benjamin');        
+    }
+    
+    function f3(){
+        console.log('Benjamin Second Call');
+    }
 });
