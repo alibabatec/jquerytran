@@ -2,17 +2,17 @@ jQuery.noConflict();
 (function($){
 	//$("span:even").css({color:'pink'});
 	//$('span').filter(':even').css({color: 'red'});
-	$('span').filter(function(index){
+	/*$('span').filter(function(index){
 		return index%4==0;
-	}).css({color: 'red'});
+	}).css({color: 'red'});*/
 	
-	$("span:contains('Sachin')").css('color', 'blue');
-	$("span:contains('Sachin')").css({'text-decoration': 'underline'});	
+	//$("span:contains('Sachin')").css('color', 'blue');
+	//$("span:contains('Sachin')").css({'text-decoration': 'underline'});	
 	
 	
-	$('span').filter(function(){
+	/*$('span').filter(function(){
 		return $($(this)[0]).text().indexOf($('#searchText').val()) != -1 ;
-	}).css({'color':'pink'});
+	}).css({'color':'pink'});*/
 	
 	
 	$('#cmdSearch').on('click', Search);
